@@ -7,7 +7,7 @@ let fila_de_imagens = ['./imagens/chrono.jpg', './imagens/inuyasha.jpg' , './ima
 let i = 0;
 
 function proximo_fila(){
-  if(i > 5){
+  if(i >= 5){
     i = 0;
     imagens.src = fila_de_imagens[i];
   }else{
@@ -17,7 +17,7 @@ function proximo_fila(){
 }
 
 function voltar_fila(){
-    if(i < 0){
+    if(i == 0){
       i = 5;
       imagens.src = fila_de_imagens[i];
     }else{
@@ -26,7 +26,6 @@ function voltar_fila(){
     }
     
 }
-
 
 proximo.addEventListener('click' , proximo_fila)
 voltar.addEventListener('click' , voltar_fila)
