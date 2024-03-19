@@ -23,8 +23,7 @@ function voltar_fila(){
     }else{
       imagens.src = fila_de_imagens[i];
       i--;
-    }
-    
+    }   
 }
 
 proximo.addEventListener('click' , proximo_fila)
